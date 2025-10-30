@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard TI-Verde</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+    <h1>🌿 TI-Verde</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="eficiencia.html">Eficiência Energética</a></li>
+            <li><a href="reciclacao.html">Reciclagem de E-lixo</a></li>
+            <li><a href="cloud.html">Cloud Sustentável</a></li>
+            <li><a href="data-centers.html">Data Centers Verdes</a></li>
+            <li><a href="Painelinterativo.html">Dashboard Interativo</a></li>
+
+        </ul>
+            
+    </nav>
+</header>
+
+<main>
+    <section class="research-section">
+    <h2>📋 Pesquisa e Coleta de Dados – TI Verde</h2>
+
+    <!-- Entrevistas com Empresas -->
+    <h3>Entrevistas com Empresas</h3>
+
+    <table class="empresa-table">
+        <thead>
+            <tr>
+                <th>Empresa</th>
+                <th>Entrevistado</th>
+                <th>Pergunta 1</th>
+                <th>Resposta 1</th>
+                <th>Pergunta 2</th>
+                <th>Resposta 2</th>
+                <th>Pergunta 3</th>
+                <th>Resposta 3</th>
+                <th>Resumo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="empresa">Natura</td>
+                <td>Ana Paula Ribeiro – Gerente de TI</td>
+                <td>Quais práticas de TI sustentável a Natura aplica atualmente?</td>
+                <td>Adotamos servidores virtualizados e data centers com refrigeração natural, reduzindo o consumo energético.</td>
+                <td>Como a empresa mede o impacto ambiental dessas ações?</td>
+                <td>Fazemos auditorias anuais de carbono. Estimamos uma redução de 35% nas emissões em dois anos.</td>
+                <td>Há benefícios sociais relacionados a essas práticas?</td>
+                <td>Sim. Promovemos cursos de capacitação em TI Verde para jovens de comunidades parceiras.</td>
+                <td>Redução de CO₂ e incentivo à educação ambiental e tecnológica.</td>
+            </tr>
+            <tr>
+                <td>Banco do Brasil</td>
+                <td>Carlos Eduardo – Analista de Infraestrutura de TI</td>
+                <td>Quais ações de sustentabilidade tecnológica estão em prática no banco?</td>
+                <td>Migramos grande parte dos serviços para a nuvem sustentável e substituímos equipamentos antigos por modelos com certificação energética.</td>
+                <td>Que resultados foram observados?</td>
+                <td>Economizamos cerca de 40% em energia elétrica e reduzimos o descarte de e-lixo em 20 toneladas no último ano.</td>
+                <td>Como essas práticas afetam a sociedade?</td>
+                <td>Apoiamo projetos de inclusão digital, oferecendo acesso a cursos de informática básica.</td>
+                <td>Grande economia de energia, redução de lixo eletrônico e impacto social positivo.</td>
+            </tr>
+            <tr>
+                <td>Ambev</td>
+                <td>Júlia Santos – Coordenadora de Sustentabilidade</td>
+                <td>Quais tecnologias verdes estão sendo utilizadas pela Ambev?</td>
+                <td>Utilizamos sensores de monitoramento energético e sistemas inteligentes de refrigeração nos data centers.</td>
+                <td>Qual o impacto ambiental obtido com essas medidas?</td>
+                <td>Reduzimos em 25% o consumo energético e em 18% a emissão de CO₂ nas operações.</td>
+                <td>Há benefícios sociais nessas práticas?</td>
+                <td>Realizamos campanhas de conscientização e promovemos transporte corporativo sustentável.</td>
+                <td>Eficiência energética e valorização de práticas sustentáveis na cultura interna.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Entrevistas com Público Geral -->
+    <h3>Entrevistas com Público Geral (17 pessoas)</h3>
+    <table class="publico-table">
+        <thead>
+            <tr>
+                <th>Nº</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Ocupação</th>
+                <th>P1: Conhece TI Verde?</th>
+                <th>P2: Prática sustentável adotada</th>
+                <th>P3: Benefícios percebidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>João Silva</td><td>29</td><td>Estudante</td><td>Sim, de forma básica</td><td>Reciclo lixo eletrônico</td><td>Reduz poluição</td></tr>
+            <tr><td>2</td><td>Maria Oliveira</td><td>34</td><td>Professora</td><td>Um pouco</td><td>Desligo equipamentos fora de uso</td><td>Economia na conta de luz</td></tr>
+            <tr><td>3</td><td>Lucas Pereira</td><td>25</td><td>Técnico em Informática</td><td>Sim, conheço bem</td><td>Uso nuvem sustentável</td><td>Menor consumo de energia</td></tr>
+            <tr><td>4</td><td>Fernanda Souza</td><td>41</td><td>Administradora</td><td>Sim</td><td>Evito impressões desnecessárias</td><td>Menos desperdício</td></tr>
+            <tr><td>5</td><td>André Costa</td><td>38</td><td>Empreendedor</td><td>Sim</td><td>Compro equipamentos com selo Procel</td><td>Redução de custos</td></tr>
+            <tr><td>6</td><td>Beatriz Lima</td><td>22</td><td>Estudante</td><td>Sim</td><td>Reciclo celulares e cabos</td><td>Ajuda o meio ambiente</td></tr>
+            <tr><td>7</td><td>Pedro Rocha</td><td>47</td><td>Engenheiro</td><td>Sim</td><td>Uso energia solar no escritório</td><td>Sustentabilidade</td></tr>
+            <tr><td>8</td><td>Carla Mendes</td><td>33</td><td>Designer</td><td>Pouco</td><td>Utilizo notebook de baixo consumo</td><td>Menos energia</td></tr>
+            <tr><td>9</td><td>Felipe Ramos</td><td>28</td><td>Analista de sistemas</td><td>Sim</td><td>Virtualizo servidores pessoais</td><td>Economia elétrica</td></tr>
+            <tr><td>10</td><td>Larissa Nunes</td><td>36</td><td>Enfermeira</td><td>Pouco</td><td>Reaproveito eletrônicos antigos</td><td>Evita lixo eletrônico</td></tr>
+            <tr><td>11</td><td>Paulo Ferreira</td><td>42</td><td>Professor</td><td>Sim</td><td>Ensino sobre tecnologia sustentável</td><td>Conscientização social</td></tr>
+            <tr><td>12</td><td>Juliana Costa</td><td>31</td><td>Contadora</td><td>Sim</td><td>Uso nuvem para armazenar documentos</td><td>Redução de papel</td></tr>
+            <tr><td>13</td><td>Tiago Martins</td><td>27</td><td>Programador</td><td>Sim</td><td>Automatizo o desligamento de PCs</td><td>Eficiência energética</td></tr>
+            <tr><td>14</td><td>Renata Alves</td><td>39</td><td>Secretária</td><td>Pouco</td><td>Desligo monitores no fim do dia</td><td>Economia</td></tr>
+            <tr><td>15</td><td>Rafael Lima</td><td>23</td><td>Estudante</td><td>Sim</td><td>Reciclo cabos e baterias</td><td>Menos resíduos</td></tr>
+            <tr><td>16</td><td>Sandra Rocha</td><td>45</td><td>Comerciante</td><td>Pouco</td><td>Imprimo só o necessário</td><td>Redução de custos</td></tr>
+            <tr><td>17</td><td>Eduardo Gomes</td><td>32</td><td>Técnico de redes</td><td>Sim</td><td>Monitora energia em equipamentos</td><td>Controle e economia</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Análise Geral -->
+    <h3>📊 Análise Geral dos Dados Coletados</h3>
+    <table class="analise-table">
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Impacto Ambiental</th>
+                <th>Economia de Energia</th>
+                <th>Benefícios Sociais</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Empresas</td>
+                <td>Redução de emissões de CO₂, e-lixo e poluição</td>
+                <td>Média de 30 a 40% de economia energética</td>
+                <td>Inclusão digital, capacitação e conscientização ambiental</td>
+            </tr>
+            <tr>
+                <td>Público Geral</td>
+                <td>Aumento da reciclagem e uso consciente</td>
+                <td>Economia média estimada de 10–15% no consumo doméstico</td>
+                <td>Melhoria da consciência ecológica e financeira</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Conclusão -->
+    <h3>🧾 Conclusão</h3>
+    <p>A pesquisa mostra que tanto empresas quanto cidadãos estão cada vez mais engajados na adoção de práticas de TI Verde. As empresas demonstram impactos mensuráveis em redução de energia e emissões, enquanto o público geral contribui com atitudes simples que, em conjunto, têm grande efeito ambiental. A integração entre conscientização social e tecnologia sustentável representa um caminho promissor para um futuro mais responsável e ecológico.</p>
+</section>
+
+    <section class="charts-section">
+        <h2>Dashboard de TI Verde</h2>
+
+        <div class="filters">
+            <label for="filtroImpacto">Filtro Impacto Ambiental:</label>
+            <select id="filtroImpacto">
+                <option value="todos">Todos</option>
+                <option value="empresas">Empresas</option>
+                <option value="publico">Público Geral</option>
+            </select>
+
+            <label for="filtroEconomia">Filtro Economia de Energia:</label>
+            <select id="filtroEconomia">
+                <option value="todos">Todos</option>
+                <option value="empresas">Empresas</option>
+                <option value="publico">Público Geral</option>
+            </select>
+        </div>
+
+        <div class="dashboard">
+            <div class="chart-container">
+                <canvas id="impactoAmbiental"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="economiaEnergia"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="praticasSustentaveis"></canvas>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 TI-Verde. Desenvolvido para promover a sustentabilidade digital.</p>
+</footer>
+
+<script>
+// Dados fictícios baseados na pesquisa
+const dados = {
+    empresas: { labels: ['Natura','Banco do Brasil','Ambev'], impactoCO2:[35,40,25], economiaEnergia:[30,40,25] },
+    publico: { labels: ['Pessoa1','Pessoa2','Pessoa3'], impactoCO2:[15,10,12], economiaEnergia:[10,12,15] },
+    praticas: ['Reciclagem e-lixo','Nuvem Sustentável','Energia Solar','Economia de Energia','Outras'],
+    praticasValores: [6,5,3,2,1]
+};
+
+// Função para atualizar gráficos
+function atualizarGrafico(tipoImpacto, tipoEconomia) {
+    let labelsImpacto=[], dataImpacto=[], colorsImpacto=[];
+    if(tipoImpacto==='empresas'){ labelsImpacto=dados.empresas.labels; dataImpacto=dados.empresas.impactoCO2; colorsImpacto=['rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(0,156,59,0.7)']; }
+    else if(tipoImpacto==='publico'){ labelsImpacto=dados.publico.labels; dataImpacto=dados.publico.impactoCO2; colorsImpacto=['rgba(200,0,0,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)']; }
+    else{ labelsImpacto=dados.empresas.labels.concat(dados.publico.labels); dataImpacto=dados.empresas.impactoCO2.concat(dados.publico.impactoCO2); colorsImpacto=['rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)']; }
+
+    chartImpacto.data.labels = labelsImpacto;
+    chartImpacto.data.datasets[0].data = dataImpacto;
+    chartImpacto.data.datasets[0].backgroundColor = colorsImpacto;
+    chartImpacto.update();
+
+    let labelsEco=[], dataEco=[], colorsEco=[];
+    if(tipoEconomia==='empresas'){ labelsEco=dados.empresas.labels; dataEco=dados.empresas.economiaEnergia; colorsEco=['rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(0,156,59,0.7)']; }
+    else if(tipoEconomia==='publico'){ labelsEco=dados.publico.labels; dataEco=dados.publico.economiaEnergia; colorsEco=['rgba(200,0,0,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)']; }
+    else{ labelsEco=dados.empresas.labels.concat(dados.publico.labels); dataEco=dados.empresas.economiaEnergia.concat(dados.publico.economiaEnergia); colorsEco=['rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)']; }
+
+    chartEconomia.data.labels = labelsEco;
+    chartEconomia.data.datasets[0].data = dataEco;
+    chartEconomia.data.datasets[0].backgroundColor = colorsEco;
+    chartEconomia.update();
+}
+
+// Gráficos iniciais
+const ctx1 = document.getElementById('impactoAmbiental').getContext('2d');
+const chartImpacto = new Chart(ctx1,{
+    type:'bar',
+    data:{ labels:dados.empresas.labels.concat(dados.publico.labels), datasets:[{ label:'% Redução CO₂', data:dados.empresas.impactoCO2.concat(dados.publico.impactoCO2), backgroundColor:['rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)'] }] },
+    options:{ responsive:true, plugins:{ legend:{position:'top'}, tooltip:{ enabled:true } }, scales:{ y:{ beginAtZero:true, title:{display:true,text:'% Redução CO₂'} } } }
+});
+
+const ctx2 = document.getElementById('economiaEnergia').getContext('2d');
+const chartEconomia = new Chart(ctx2,{
+    type:'bar',
+    data:{ labels:dados.empresas.labels.concat(dados.publico.labels), datasets:[{ label:'% Economia de Energia', data:dados.empresas.economiaEnergia.concat(dados.publico.economiaEnergia), backgroundColor:['rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(0,156,59,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)','rgba(200,0,0,0.7)'] }] },
+    options:{ responsive:true, plugins:{ legend:{position:'top'}, tooltip:{ enabled:true } }, scales:{ y:{ beginAtZero:true, title:{display:true,text:'% Economia de Energia'} } } }
+});
+
+const ctx3 = document.getElementById('praticasSustentaveis').getContext('2d');
+const chartPraticas = new Chart(ctx3,{
+    type:'pie',
+    data:{ labels:dados.praticas, datasets:[{ label:'Práticas Sustentáveis', data:dados.praticasValores, backgroundColor:['rgba(0,156,59,0.7)','rgba(200,0,0,0.7)','rgba(0,100,0,0.7)','rgba(144,238,144,0.7)','rgba(128,0,128,0.7)'] }] },
+    options:{ responsive:true, plugins:{ tooltip:{ enabled:true } } }
+});
+
+document.getElementById('filtroImpacto').addEventListener('change', function(){ atualizarGrafico(this.value, document.getElementById('filtroEconomia').value); });
+document.getElementById('filtroEconomia').addEventListener('change', function(){ atualizarGrafico(document.getElementById('filtroImpacto').value, this.value); });
+</script>
+
+</body>
+</html>
