@@ -211,3 +211,117 @@ table tbody tr:hover {
     }
 }
 
+/* Praticas Sustentáveis */
+/* Seção ODS 12 */
+.ods-section {
+    background-color: #f0f8f5; /* verde muito claro */
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.ods-section h2 {
+    color: #2e7d32; /* verde bandeira do header */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ods-section h3 {
+    color: #388e3c; /* verde mais forte para subtítulos */
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.ods-section p, 
+.ods-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.ods-section ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Tabela ODS */
+.ods-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.ods-table th {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.ods-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.ods-table tbody tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+.ods-table tbody tr:hover {
+    background-color: #c8e6c9;
+}
+
+/* Imagens na tabela */
+.table-img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+/* Imagens destacadas abaixo da seção */
+.ods-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.highlight-img {
+    width: 30%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .highlight-img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .highlight-img {
+        width: 100%;
+    }
+    .ods-table, .ods-table thead, .ods-table tbody, .ods-table th, .ods-table td, .ods-table tr {
+        display: block;
+    }
+    .ods-table thead { display: none; }
+    .ods-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .ods-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: bold;
+        text-align: left;
+    }
+}
