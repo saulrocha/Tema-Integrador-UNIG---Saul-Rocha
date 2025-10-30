@@ -18,7 +18,7 @@ nav ul { list-style: none; padding: 0; margin: 0; }
 nav ul li { display: inline-block; margin: 0 10px; }
 nav ul li a { color: white; text-decoration: none; font-weight: 600; transition: color 0.3s; }
 nav ul li a:hover { color: #a5d6a7; }
-main { max-width: 1000px; margin: 40px auto; padding: 20px; }
+main { max-width: 1200px; margin: 40px auto; padding: 20px; }
 section { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 30px; }
 section img { width: 100%; border-radius: 10px; margin-top: 15px; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
@@ -28,3 +28,186 @@ section img { width: 100%; border-radius: 10px; margin-top: 15px; }
 .card h3 { color: #2e7d32; }
 footer { background-color: #2e7d32; color: white; text-align: center; padding: 15px 10px; margin-top: 40px; }
 @media (max-width: 600px) { header h1 { font-size: 1.5em; } nav ul li { display: block; margin: 8px 0; } main { padding: 10px; } }
+
+
+/* style.css - Extensão para Dashboard TI Verde */
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo e cores base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #2c3e50;
+}
+
+/* Cabeçalho e navegação já existentes serão mantidos */
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Centralização de seções e cards */
+section, .charts-section {
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+/* Dashboard container */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Containers dos gráficos */
+.chart-container {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos dos gráficos */
+.chart-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #009c3b; /* verde bandeira */
+}
+
+/* Filtros (select) */
+select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* Tooltip customizado do Chart.js pode ser ajustado diretamente via JS se necessário */
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .chart-container {
+        width: 100%;
+    }
+}
+
+
+/* Tabelas de Pesquisa TI-Verde */
+.research-section {
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.research-section h2, 
+.research-section h3 {
+    text-align: center;
+    color: #009c3b; /* Verde bandeira */
+    margin-bottom: 15px;
+}
+
+.research-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+table thead th {
+    background-color: #009c3b; /* Verde bandeira */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+}
+
+table tbody td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    vertical-align: top;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f0f8f0; /* verde claro */
+}
+
+table tbody tr:hover {
+    background-color: #d4efdf; /* destaque hover suave */
+}
+
+.empresa-table th, .empresa-table td {
+    font-size: 0.9rem;
+}
+
+.publico-table th, .publico-table td {
+    font-size: 0.9rem;
+}
+
+.analise-table th, .analise-table td {
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead {
+        display: none;
+    }
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #009c3b;
+    }
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
